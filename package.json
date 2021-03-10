@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "card-binder": "^0.2.3",
     "next": "10.0.8",
     "react": "17.0.1",

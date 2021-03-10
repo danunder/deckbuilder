@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Binder from '../components/binder'
+import Binder from '../components/Binder'
 
 
 export default function Home() {

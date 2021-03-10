@@ -1,3 +1,33 @@
+
+Card images display in a 'binder'
+'page' fits to screen and displays a reasonable amount of cards
+you can go to the next / previous page to see more cards
+cards are associated with 
+you can apply filters to the card that are displayed
+you can sort the cards by name, cost.
+you can add and remove cards to/from a deck
+your deck can be exported in a json format that will work with tabletop simulator
+
+
+PROGRESS UPDATE 
+Feb 24 
+- wrote Python script to download card images
+- downloaded card images
+- set up AWS S3 bucket to host
+- successfully got hosted images loading on page  
+
+
+MAR 8th - 
+- rebuilt in Next.js
+- imported all cards as single JSON
+- hooked up react card binder component. images loading.
+
+Mar 9 goals - 
+- make a component to handle sorting and filtering. a button underneatht the binder will show/hide this component. 
+- create buttons to filter cards by colour and type 
+- create options for sorting the cards (dropdowns?)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
