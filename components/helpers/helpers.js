@@ -2,12 +2,13 @@ export const getImgUrl = code => `https://definitelynotswdestinycardimages.s3.us
 // RAW AND UNFILTERED - everything is in this JSON
 const cardData = require('./cardData.json')
 
+const filteredCardData = cardData.filter(x => x.name === "Luke Skywalker")
+
 
 
 // currently drawing from RAW UNFILTERED cardData. 
 export const getCardsToDisplay = (cardsPP, page) => {
   const indexes = Array.from(Array(cardsPP), (x, i) => page? cardsPP * page + i : i)
     
-  console.log(indexes)
-  return indexes.map((x) => cardData[x])
+  return indexes.map((x) => filteredCardData[x]? filteredCardData[x] : {code: null, name: null})
   }
