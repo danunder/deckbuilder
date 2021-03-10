@@ -44,9 +44,8 @@ export default function SWDBinder(props) {
         {cards}
       </Page>
     </Binder>
-      {page > 0 && (
-        <Button onClick={() => setPage(page - 1)}>RETREAT!</Button>
-      )}
+      
+      <Button onClick={() => page > 0 && setPage(page - 1)}>RETREAT!</Button>      
       <Button onClick={() => setPage(page + 1)}>ADVANCE</Button>
 
       </>
