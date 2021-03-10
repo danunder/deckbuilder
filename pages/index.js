@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Binder from '../components/Binder'
+import SWDBinder from '../components/SWDBinder'
 
 
 export default function Home() {
   return (
-    <Binder>
+    <SWDBinder>
 
-    </Binder>
+    </SWDBinder>
   )
 }
